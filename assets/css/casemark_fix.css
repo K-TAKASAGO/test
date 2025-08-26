@@ -1,0 +1,6 @@
+
+/* casemark_fix.css r108 */
+.elem-item .txt{ width:100%; min-width:0; }
+#elemList{ display:flex; flex-direction:column; gap:8px; }
+#elemList .elem-item{ cursor:grab; }
+#elemList .elem-item:active{ cursor:grabbing; }

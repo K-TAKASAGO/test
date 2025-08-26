@@ -1,0 +1,15 @@
+
+/* Actions toolbar */
+.order-actions{display:flex;align-items:center;gap:12px;padding:8px var(--pad);border-bottom:1px solid var(--line);background:var(--bg)}
+.order-actions .block{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.order-actions input[type="text"],.order-actions input[type="number"]{height:32px;padding:6px 10px;border:1px solid #cbd5e1;border-radius:10px}
+.order-actions .btn{min-height:32px;padding:6px 12px;border-radius:10px}
+.order-actions .split{flex:1}
+.order-actions .orderNo-badge{background:#0b1526;color:#fff;border-radius:999px;padding:6px 12px;font-weight:800}
+.oa-modal{position:fixed;inset:0;background:rgba(0,0,0,.3);display:none;align-items:center;justify-content:center;z-index:1000}
+.oa-modal .panel{background:#fff;border:1px solid var(--line);border-radius:12px;width:min(900px,90vw);max-height:80vh;overflow:auto;box-shadow:0 10px 30px rgba(0,0,0,.2)}
+.oa-modal .panel .hd{padding:10px 14px;border-bottom:1px solid var(--line)}
+.oa-modal .panel .bd{padding:12px}
+.oa-modal .list{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center}
+.oa-modal .list .item{padding:8px 10px;border:1px solid #e5e7eb;border-radius:10px}
+.oa-modal .panel .ft{padding:10px 14px;border-top:1px solid var(--line);display:flex;justify-content:flex-end;gap:8px}

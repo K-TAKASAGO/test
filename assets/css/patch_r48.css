@@ -1,0 +1,16 @@
+
+/* patch r48: lock button & layout tweaks */
+.inline-with-btn{display:flex;gap:8px;align-items:center;}
+.lock-btn{padding:4px 10px;border-radius:8px;background:#eef2ff;border:1px solid #c7d2fe;color:#1e3a8a;font-weight:700;cursor:pointer;min-height:28px}
+.lock-btn.locked{background:#e7f7ec;border-color:#b7f3c8;color:#0b5c2b}
+.basic-card.locked input,
+.basic-card.locked select,
+.basic-card.locked textarea{background:#f5f6f8;pointer-events:none;opacity:.85}
+.basic-card.locked .lock-btn{pointer-events:auto;opacity:1}
+
+.basic-card .bd{overflow-x:hidden;}
+#basic-info-grid, .bi-sections, .bi-group, .bi-row, .bi-row > *{min-width:0;}
+
+.cm-designer{grid-template-columns:minmax(560px,1fr) 560px;}
+.cm-tools .info-grid{grid-template-columns:90px 1fr 90px 1fr;column-gap:10px;}
+.cm-tools input[type="number"], .cm-tools input[type="text"]{width:100%;}
